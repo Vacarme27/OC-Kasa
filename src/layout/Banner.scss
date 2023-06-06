@@ -11,19 +11,19 @@
     align-items: center;
     justify-content: center;
     color: var(--backgroundGrey);
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.3);    
+        border-radius: 25px;
+    }
+    & h1{
+        position: relative;
+        font-size: 48px;
+        font-weight: 500;    
+    }
 }
 
-.banner::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0,0,0,0.3);    
-    border-radius: 25px;
-}
 
-.banner h1{
-    position: relative;
-    font-size: 48px;
-    font-weight: 500;    
-}
 

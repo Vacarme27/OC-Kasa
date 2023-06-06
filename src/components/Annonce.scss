@@ -1,6 +1,6 @@
 .grid{
     margin-top: 43px;
-    background-color: #f7f7f7;
+    background-color: var(--backgroundGrey);
     min-height: 50vh;
     border-radius: 25px;
     display: flex;     
@@ -11,8 +11,8 @@
 }
 
 @media screen and (width <= 768px){
-    .grid{
-     background-color: white;
+    .grid{        
+     background-color: var(--tertiaryColor);
      padding: 0;
     } 
 }

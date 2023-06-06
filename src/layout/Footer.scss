@@ -1,14 +1,13 @@
 .footer{
-    background-color: black;
-    color: white;
+    background-color: var(--backgroundFooter);
+    color: var(--tertiaryColor);
     text-align: center;
     min-height: 210px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-     
-}
-.footer img{    
-    width: 130px;      
+    & img{    
+        width: 130px;      
+    }     
 }

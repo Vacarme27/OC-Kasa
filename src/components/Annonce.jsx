@@ -1,12 +1,12 @@
-import "./Annonce.css";
-import Appartment from "./Appartment"
+import "./Annonce.scss";
+import Apartment from "./Apartment"
 
 function Annonce() {
     return <section className="grid">
-        <Appartment />
-        <Appartment />
-        <Appartment />
-        <Appartment />
+        <Apartment />
+        <Apartment />
+        <Apartment />
+        <Apartment />
     </section>
 }
 

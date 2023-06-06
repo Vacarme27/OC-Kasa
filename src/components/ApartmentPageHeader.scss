@@ -1,0 +1,68 @@
+.apartment__header{
+    display: flex;
+    margin-bottom: 25px;
+    .apartment__title{
+        flex-grow: 1;
+    }
+    .apartment__owner{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .apartment__owner_details{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    .apartment__owner__badge{
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        background-color: var(--badgeColor);
+    }
+    .apartment__owner__stars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 44px;
+        
+        .on{
+            color: var(--primaryColor);
+        }
+        .off{
+            color: var(--starOff);
+        }
+    } 
+    h1{
+        font-size: 36px;
+        font-weight: 600; 
+        line-height: 51px;
+        margin-block: 0;     
+      }
+    h2{
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 26px;
+      }
+    .apartment__tags {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(115px, 115px));
+        gap:10px;
+        span{
+            background-color: var(--primaryColor);
+            color: var(--tertiaryColor);
+            border-radius: 10px;
+            padding: 3px 0px;  
+            text-align: center;        
+        }
+    }       
+    h3{
+        font-weight: 500;
+        font-size: 18px;            
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;            
+        margin-block: 0;            
+    }
+}

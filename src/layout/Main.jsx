@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./Main.css";
+import "./Main.scss";
 
 function Main({ children }) {    
     return <div className="main">{children}</div>
