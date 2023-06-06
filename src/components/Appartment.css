@@ -7,8 +7,7 @@
     align-items: flex-end;
     min-width: 340px;
     min-height: 340px;
-
- }
+ } 
 
  @media screen and (width <= 768px){
        .appartment{
