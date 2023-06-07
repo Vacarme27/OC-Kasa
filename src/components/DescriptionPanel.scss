@@ -1,4 +1,6 @@
-.apartment__description {
+.description__panel {
+    margin-top: 25px;
+    flex-basis: 50%;
     p{
         margin-block: 0;
     }
@@ -10,9 +12,15 @@
         padding: 10px 20px 10px 10px;
         display: flex;
         justify-content: space-between;
+        @media screen and (width <= 768px) {
+            font-size: 13px;
+        } 
         i {
             font-size: 24px;
             cursor: pointer;
+            @media screen and (width <= 768px) {
+                font-size: 16px;
+            } 
         }
     }
     .description__content{
@@ -22,9 +30,9 @@
         position: relative;
         top: -15px;
         z-index: -1;
+        font-size: 18px;
+        @media screen and (width <= 768px) {
+            font-size: 12px;
+        } 
     }
-}
-.apartment__description_area{
-    display: flex;
-    gap:50px;
 }

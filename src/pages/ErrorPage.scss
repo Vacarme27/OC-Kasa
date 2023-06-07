@@ -1,0 +1,39 @@
+
+
+.error__page{
+    color:var(--primaryColor);
+    text-align: center;
+    @media screen and (width <= 768px) {
+        margin: 202px 0;                
+    } 
+    h1{
+        font-size: 288px;
+        font-weight: 700;               
+        margin: 0;
+        margin-bottom: 43px;
+        @media screen and (width <= 768px) {
+            font-size: 96px;                 
+        }  
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 500;        
+        margin-bottom: 75px;
+        margin: 0;
+        @media screen and (width <= 768px) {
+            font-size: 18px;;      
+        }     
+    }
+    & div{
+        margin-top: 65px;
+        margin-bottom: 65px;        
+    }
+    a {             
+        color:var(--primaryColor);
+        text-decoration: underline;
+        font-size: 18px;
+        @media screen and (width <= 768px) {
+            font-size: 14px;      
+        } 
+    }
+}

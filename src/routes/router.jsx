@@ -2,15 +2,13 @@ import { createBrowserRouter} from "react-router-dom";
 import HomePage from '../pages/Homepage.jsx'
 import ApartmentPage from '../pages/ApartmentPage.jsx'
 import HeaderFooterLayout from "../layout/HeaderFooterLayout.jsx";
+import About from '../pages/About.jsx'
+import ErrorPage from '../pages/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    errorElement: (
-      <HeaderFooterLayout>
-        <h1>Oups erreur 404</h1>
-      </HeaderFooterLayout>
-    ),
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -25,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: (
-          <h1>A Propos</h1>
+          <About />
         )
       }
     ]
