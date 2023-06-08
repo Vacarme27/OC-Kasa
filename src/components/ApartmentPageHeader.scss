@@ -68,14 +68,7 @@
             line-height: 20px;     
          } 
       }
-    .apartment__tags {
-        // display: grid;
-        // align-items: center;
-        // grid-template-columns: repeat(auto-fit, minmax(115px, 115px));
-        // gap:10px;
-        // @media screen and (width <= 768px) {
-        //     grid-template-columns: repeat(auto-fit, minmax(84px, 84px));
-        // } 
+    .apartment__tags {       
         display: flex;
         flex-wrap: wrap;
         align-items: center;

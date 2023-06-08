@@ -24,7 +24,8 @@ const [firstName, lastName] = name.split(" ");
                         <span>{lastName}</span>
                     </h3>
                     <div className="apartment__owner__badge">
-                        <img src={props.selectedApartment.host.picture} alt="" />
+                    <img src={props.selectedApartment.host.picture} alt={`Portrait de : ${firstName} ${lastName}`} />
+
                     </div>
                     </div>
                     <div className="apartment__owner__stars">

@@ -1,18 +1,27 @@
 import "./DescriptionPanel.scss"
+import { useState } from "react";
 
 function DescriptionPanel(props){
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const visible = () => {
+        setIsVisible (!isVisible);
+    }
+
+    const chevronClass = "fas " + (isVisible ? "fa-chevron-up" : "fa-chevron-down");
+    const contentClass = (isVisible ? "visible" : "hidden") + " description__content";
+
     return(        
         <div className="description__panel">
-            <p className="description__header">
+            <p className="description__header" onClick={visible}>
                 <span>{props.title}</span>
-                <i className="fa-sharp fa-solid fa-chevron-down"></i>
+                <i className={chevronClass}></i>
+            </p>            
+            <p className= {contentClass} >{props.content}
             </p>
-            <p className="description__content">
-                {props.content}
-            </p>
-        </div>                
-                
-    );        
+        </div> 
+    );
 }
 
 export default DescriptionPanel;

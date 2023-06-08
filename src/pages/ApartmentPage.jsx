@@ -1,4 +1,4 @@
-import ApartmentPageBanner from "../components/ImageBanner";
+import ImageBanner from "../components/ImageBanner";
 import DescriptionPanel from "../components/DescriptionPanel";
 import ApartmentPageHeader from "../components/ApartmentPageHeader"
 import "./ApartmentPage.scss";
@@ -24,11 +24,16 @@ function ApartmentPage(){
     if (selectedApartment == null) return <h1>Loading</h1>
     return(
         <div className="apartmentPage">
-            <ApartmentPageBanner imageUrl={selectedApartment.cover} />
+            <ImageBanner pictures={selectedApartment.pictures} />
             <ApartmentPageHeader selectedApartment={selectedApartment}/>
             <div className="apartment__description__area">
                 <DescriptionPanel title="Description" content={selectedApartment.description} />
-                <DescriptionPanel title="Equipement" content={selectedApartment.equipments.map(equipment => <li key={equipment}>{equipment}</li>)}/>            
+                <DescriptionPanel
+                title="Equipement"
+                content={selectedApartment.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                ))}
+                />         
             </div>
         </div>
     );
