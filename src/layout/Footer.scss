@@ -3,11 +3,14 @@
     color: var(--tertiaryColor);    
     text-align: center;
     min-height: 210px;
-    margin-top: 50px;
+    margin-top: auto; 
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;             
     & img{    
-        width: 130px;      
+        width: 130px;
+        &:hover{
+            transform: scale(1.2);
+        }      
     }     
 }

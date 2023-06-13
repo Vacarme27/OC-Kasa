@@ -14,15 +14,15 @@ function ApartmentPage(){
     return <ErrorPage />;
   }  
     return(
-        <div className="apartmentPage">
+        <div className="apartment_page">
             <ImageBanner pictures={selectedApartment.pictures} />
             <ApartmentPageHeader selectedApartment={selectedApartment}/>
             <div className="apartment__description__area">
                 <DescriptionPanel title="Description" content={selectedApartment.description} />
                 <DescriptionPanel
                 title="Equipement"
-                content={selectedApartment.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
+                content={selectedApartment.equipments.map((equipment, id) => (
+                    <li key={id}>{equipment}</li>
                 ))}
                 />         
             </div>

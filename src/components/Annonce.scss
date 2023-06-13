@@ -1,5 +1,6 @@
-.grid{
+.container{
     margin-top: 43px;
+    margin-bottom: 50px;
     background-color: var(--backgroundGrey);
     min-height: 50vh;
     border-radius: 25px;
@@ -7,7 +8,12 @@
     justify-content: center;  
     flex-wrap: wrap;
     gap:50px;
-    padding: 50px;    
+    padding: 50px;
+    &:last-child{
+        @media screen and (width <= 768px){                
+            margin-bottom: 50px;                       
+       }
+    }    
     & > * {        
         max-width:340px;
         @media screen and (width <= 768px){                

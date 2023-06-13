@@ -15,7 +15,12 @@ a{
 li{
   list-style-type: none;
 }
-body{
-  // max-width: 1440px;
-  // margin: auto;
+body{    
+  margin: auto;
+  max-width: 1440px; 
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

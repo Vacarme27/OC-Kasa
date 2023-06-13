@@ -14,7 +14,7 @@ function Annonce() {
             .then((res) => setApartments(res))
             .catch(console.error);           
     }
-    return <section className="grid">
+    return <section className="container">
                 {apartments.map((apartment) => (
                 <ApartmentCard key={apartment.id} id={apartment.id} title={apartment.title} imageUrl={apartment.cover}/>
                 ))}                

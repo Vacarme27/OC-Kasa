@@ -6,9 +6,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <NavLink to="/">
-      <div className="navbar__logo">
-        <img src={logo} alt="Logo Kasa" />
-      </div>
+        <div className="navbar__logo">
+          <img src={logo} alt="Logo Kasa" />
+        </div>
       </NavLink>
       <NavLink to="/">
         <div>Accueil</div>
