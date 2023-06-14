@@ -11,8 +11,7 @@ return (
                 <Link to ="/">Retourner sur la page d&apos;accueil </Link>
             </div>
         </div>        
-        </>
-    
+    </>    
 );
 }
 

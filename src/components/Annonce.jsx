@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import "./Annonce.scss";
 import ApartmentCard from "./ApartmentCard"
 
-
-
 function Annonce() {
     const [apartments, setApartments] = useState([]);
     useEffect (fetchApartments, []);

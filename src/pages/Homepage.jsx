@@ -5,8 +5,8 @@ import Annonce from "../components/Annonce";
 function HomePage() {
   return (
     <>
-    <Banner />
-    <Annonce />    
+      <Banner />
+      <Annonce />    
     </>
   );  
 }
