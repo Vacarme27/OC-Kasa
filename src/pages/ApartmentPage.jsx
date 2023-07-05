@@ -29,5 +29,4 @@ function ApartmentPage(){
         </div>
     );
 }
-
 export default ApartmentPage;

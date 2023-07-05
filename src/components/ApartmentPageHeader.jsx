@@ -5,7 +5,6 @@ function ApartmentPageHeader(props){
 const name = props.selectedApartment.host.name;
 const [firstName, lastName] = name.split(" ");
 
-
     return (
         <div className="apartment__header">
                 <div className="apartment__title">
@@ -39,5 +38,4 @@ const [firstName, lastName] = name.split(" ");
             </div>
     );
 }
-
 export default ApartmentPageHeader;

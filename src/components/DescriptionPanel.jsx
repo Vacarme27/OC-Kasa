@@ -8,7 +8,6 @@ function DescriptionPanel(props){
     const visible = () => {
         setIsVisible (!isVisible);
     }
-
     const chevronClass = "fas " + (isVisible ? "fa-chevron-up" : "fa-chevron-down");
     const contentClass = (isVisible ? "visible" : "hidden") + " description__content";
 
@@ -23,5 +22,4 @@ function DescriptionPanel(props){
         </div> 
     );
 }
-
 export default DescriptionPanel;
