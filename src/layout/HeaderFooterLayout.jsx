@@ -5,13 +5,13 @@ import Main from "../layout/Main.jsx";
 
 const HeaderFooterLayout = () => {
     return (
-      <>
-        <Navbar />
-        <Main>
-        <Outlet />
-        </Main>
-        <Footer />
-      </>
+        <>
+            <Navbar />
+            <Main>
+                <Outlet />
+            </Main>
+            <Footer />
+        </>
     );
   };
 

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function AppartmentCard(props){    
     return (
         <Link
-         to={`/apartment/${props.id}`}
-         state={{
+            to={`/apartment/${props.id}`}
+            state={{
             apartmentId: props.id
-         }}
+            }}
         >
             <div className="apartment">                
                 <img src={props.imageUrl} alt={props.title} />               

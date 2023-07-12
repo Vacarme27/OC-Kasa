@@ -12,14 +12,14 @@ function DescriptionPanel(props){
     const contentClass = (isVisible ? "visible" : "hidden") + " description__content";
 
     return(        
-        <div className="description__panel">
+        <article className="description__panel">
             <p className="description__header" onClick={visible}>
                 <span>{props.title}</span>
                 <i className={chevronClass}></i>
             </p>            
             <p className= {contentClass} >{props.content}
             </p>
-        </div> 
+        </article> 
     );
 }
 export default DescriptionPanel;

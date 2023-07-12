@@ -6,27 +6,27 @@ import About from '../pages/About.jsx'
 import ErrorPage from '../pages/ErrorPage.jsx'
 
 const router = createBrowserRouter([
-  {
-    element: <HeaderFooterLayout />,    
-    children: [
-      {
-        path: "/",
-        element: <HomePage/>
-      },
-      {
-        path: '/apartment/:id',
-        element: <ApartmentPage />
-      },
-      {
-        path: "/about",
-        element: <About />
-      },
-      {
-        path: "/*",
-        element : <ErrorPage />
-      }
-    ]
-  }
+    {
+        element: <HeaderFooterLayout />,    
+        children: [
+            {
+                path: "/",
+                element: <HomePage/>
+            },
+            {
+                path: '/apartment/:id',
+                element: <ApartmentPage />
+            },
+            {
+                path: "/about",
+                element: <About />
+            },
+            {
+                path: "/*",
+                element : <ErrorPage />
+            }
+        ]
+    }
 ]);
 
 export default router;

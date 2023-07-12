@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./Main.scss";
 
 function Main({ children }) {    
-    return <div className="main">{children}</div>
+    return <main className="main">{children}</main>
 }
 
 Main.proptypes={

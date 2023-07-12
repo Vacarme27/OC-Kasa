@@ -1,9 +1,9 @@
 import "./Banner.scss"
 
 function Banner() {
-    return <div className="banner">        
+    return <header className="banner">        
         <h1>Chez vous, partout et ailleurs</h1>
-    </div>
+    </header>
 }
 
 export default Banner;

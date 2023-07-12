@@ -10,23 +10,26 @@ function ApartmentPage(){
     const { id } = useParams();
     const selectedApartment = database.find((data) => data.id === id);
 
-  if (!selectedApartment) {
-    return <ErrorPage />;
-  }  
+    if (!selectedApartment) {
+        return <ErrorPage />;
+    }  
     return(
-        <div className="apartment_page">
+        <section className="apartment_page">
             <ImageBanner pictures={selectedApartment.pictures} />
             <ApartmentPageHeader selectedApartment={selectedApartment}/>
             <div className="apartment__description__area">
-                <DescriptionPanel title="Description" content={selectedApartment.description} />
                 <DescriptionPanel
-                title="Equipement"
-                content={selectedApartment.equipments.map((equipment, id) => (
-                    <li key={id}>{equipment}</li>
-                ))}
-                />         
+                    title="Description"
+                    content={selectedApartment.description}
+                />
+                <DescriptionPanel
+                    title="Equipement"
+                    content={selectedApartment.equipments.map((equipment, id) => (
+                        <li key={id}>{equipment}</li>
+                    ))}
+                />
             </div>
-        </div>
+        </section>
     );
 }
 export default ApartmentPage;
